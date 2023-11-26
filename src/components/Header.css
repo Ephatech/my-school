@@ -1,0 +1,37 @@
+.my-nav{
+font-family: 'Lato', sans-serif;
+   font-family: 'Quicksand', sans-serif;
+   font-weight: 700;
+   font-size: 18px;
+   }
+   
+.links{
+     color : black;
+     text-align: center;
+    
+} 
+
+.logo{
+   font-family: 'Rye', serif;
+   font-weight: 900;
+   font-size: 25px;
+   /* color: rgb(255, 154, 2); */
+   background: linear-gradient(to left,
+                    violet,
+                    indigo,
+                    blue,
+                    green,
+                    yellow,
+                    orange,
+                    red);
+            -webkit-background-clip: text;
+            color: transparent;
+}
+
+.btn{
+   text-align: center;
+   color:white;
+   border-top-left-radius: 7px; 
+   border-top-right-radius: 0px; border-bottom-left-radius: 7px;border-bottom-right-radius: 7px;
+
+}
