@@ -11,6 +11,28 @@ font-family: 'Lato', sans-serif;
     
 } 
 
+.fixed-header{
+   z-index: 1;
+   height: 80px;
+   width: 100%;
+   background-color: #373842;
+   position: fixed;
+   font-family: 'Lato', sans-serif;
+   font-family: 'Quicksand', sans-serif;
+   font-weight: 700;
+   font-size: 18px;
+   border-bottom: #3e3f4b solid;
+}
+
+
+.fixed-header .links{
+   color: white;
+}
+
+.links:hover{
+   color:#e86c6c;
+}
+
 .logo{
    font-family: 'Rye', serif;
    font-weight: 900;

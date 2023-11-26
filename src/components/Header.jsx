@@ -1,15 +1,27 @@
-import React from 'react';
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
-// Import the Bootstrap CSS file
+import React, { useEffect, useState } from 'react'
+import { Navbar, Nav, Container} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-// Import the Bootstrap JavaScript file (optional, only if you need interactive components)
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './Header.css'
 
 const Header = () => {
+
+  const [isHeaderFixed, setIsHeaderFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.pageYOffset;
+      setIsHeaderFixed(scrollPosition > 80);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <Navbar className='my-nav' collapseOnSelect expand="lg">
+    <Navbar className={isHeaderFixed ? 'fixed-header' : 'my-nav'} collapseOnSelect expand="lg">
       <Container className='py-2 py-lg-4' >
         <Navbar.Brand className="logo mx-4 " href="#home">My School</Navbar.Brand>
         <Navbar.Toggle style={{marginBottom:'5px', height:'30px',borderStyle:'none'}} aria-controls="responsive-navbar-nav" />
