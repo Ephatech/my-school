@@ -22,7 +22,17 @@ font-family: 'Lato', sans-serif;
    font-weight: 700;
    font-size: 18px;
    border-bottom: #3e3f4b solid;
+   animation: slideIn 1s ease-in-out;
 }
+
+@keyframes slideIn {
+   0% {
+     transform: translatey(-100%);
+   }
+   100% {
+     transform: translatey(0);
+   }
+ }
 
 
 .fixed-header .links{

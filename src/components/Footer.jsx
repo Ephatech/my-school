@@ -13,7 +13,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="my-footer footer mt-auto py-3">
+    <footer className="my-footer footer mt-auto py-3 pt-sm-4 pt-lg-5">
       <Container>
         <Row className='mx-auto'>
           <Col sm={12} md={6} lg={3}>

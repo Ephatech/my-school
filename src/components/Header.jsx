@@ -21,7 +21,7 @@ const Header = () => {
   }, []);
 
   return (
-    <Navbar className={isHeaderFixed ? 'fixed-header' : 'my-nav'} collapseOnSelect expand="lg">
+    <Navbar className={isHeaderFixed ? 'fixed-header' : 'my-nav'} collapseOnSelect expand="lg" >
       <Container className='py-2 py-lg-4' >
         <Navbar.Brand className="logo mx-4 " href="#home">My School</Navbar.Brand>
         <Navbar.Toggle style={{marginBottom:'5px', height:'30px',borderStyle:'none'}} aria-controls="responsive-navbar-nav" />
