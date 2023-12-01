@@ -1,0 +1,7 @@
+.stake {
+    overflow-y: scroll;
+  }
+  
+  .stake::-webkit-scrollbar {
+    display: none;
+  }

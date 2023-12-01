@@ -1,0 +1,20 @@
+.see-more{
+    text-decoration:none;
+    color: #e86c6c;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+.see-more:hover{
+    text-decoration: underline;
+    color:#a44512;
+    cursor: pointer;
+}
+
+.card{
+    transition: transform 0.5s linear;
+}
+
+.card:hover{
+    transform: scaleX(105%);
+}
