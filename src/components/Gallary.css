@@ -1,0 +1,40 @@
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .photo {
+    position: relative;
+  }
+  
+  .photo img {
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    transition: transform 1s ease;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.5);
+    color: #fff;
+    padding: 10px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .photo:hover{
+    text-align: center;
+    cursor: pointer;
+    transform: scale(1.1);
+  }
+
+  .caption:hover{
+    background-color: rgba(215, 106, 106, 0.5);
+  }
